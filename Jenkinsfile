@@ -31,7 +31,7 @@ pipeline {
                     // build image
                     def myImage = docker.build("335871625378.dkr.ecr.us-east-1.amazonaws.com/hamid-netflix:v1")
                     // push image
-                    myImage.push('v1')
+                    myImage.push()
                     }
                 }
             }
